@@ -7,7 +7,7 @@ export enum Category {
 }
 
 @Schema()
-export class Restaurants {
+export class Restaurant {
   @Prop()
   name: string;
 
@@ -30,4 +30,4 @@ export class Restaurants {
   images?: object[];
 }
 
-export const RestaurantsSchema = SchemaFactory.createForClass(Restaurants);
+export const RestaurantsSchema = SchemaFactory.createForClass(Restaurant);
